@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="飲品項目" Margin="27,0,0,28" HorizontalAlignment="Left" Width="386" Height="274" VerticalAlignment="Bottom" Background="#FFDDDFF3">
+            <StackPanel x:Name="stackpanel_DrinkMenu" HorizontalAlignment="Center" Width="318" Height="226"/>
+        </GroupBox>
+        <GroupBox Header="內用/外帶" Margin="27,0,0,307" Height="105" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="386" Background="#FFF4E4B1">
+            <StackPanel Margin="0,0,8,0" Height="61" HorizontalAlignment="Right" Width="343">
+                <RadioButton x:Name="rd1" Content="內用" IsChecked="True" Checked="RadioButton_Checked"/>
+                <RadioButton x:Name="rd2" Content="外帶"  Checked="RadioButton_Checked" />
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="OrderButton" Content="訂購完成" Margin="446,36,0,0" VerticalAlignment="Top" Height="92" HorizontalAlignment="Left" Width="309" FontSize="24" Click="OrderButton_Click"/>
+        <TextBlock x:Name="displayTextBlock" HorizontalAlignment="Left" Margin="446,0,0,28" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom" Height="256" Width="309" Background="#FFF3DFD0"/>
+
+    </Grid>
+</Window>
